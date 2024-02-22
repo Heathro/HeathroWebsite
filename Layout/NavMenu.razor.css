@@ -65,18 +65,54 @@
     color: white;
 }
 
+.nav-parent-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.1rem;
+}
+
+    .nav-parent-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+
+.nav-child-item {
+    font-size: 0.9rem;
+    padding-bottom: 0.1rem;
+}
+
+    .nav-child-item ::deep a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 1.5rem;
+        display: flex;
+        align-items: center;
+        line-height: 1.5rem;
+    }
+
+        .nav-child-item ::deep a.active {
+            background-color: rgba(255,255,255,0.37);
+            color: white;
+        }
+
+        .nav-child-item ::deep a:hover {
+            background-color: rgba(255,255,255,0.1);
+            color: white;
+        }
+
 @media (min-width: 641px) {
     .navbar-toggler {
         display: none;
     }
 
     .collapse {
-        /* Never collapse the sidebar for wide screens */
         display: block;
     }
     
     .nav-scrollable {
-        /* Allow sidebar to scroll for tall menus */
         height: calc(100vh - 3.5rem);
         overflow-y: auto;
     }
