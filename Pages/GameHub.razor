@@ -1,3 +1,38 @@
 ﻿@page "/gamehub"
 
 <PageTitle>GameHub</PageTitle>
+
+<img src="assets/gamehub-image.png" alt="Screenshot of GameHub website" class="screenshot" />
+
+<div class="container">
+
+    <div class="description">
+        <p>
+            "GameHub" is a website for programmers passionate about games. 
+            There, you can upload your own games or download others. 
+            You can write reviews, chat with other members, and make friends.
+        </p>
+        <p>
+            API - .NET 7.0, C#<br />
+            Client - Angular 16, TypeScript<br />
+            Data - Entity Framework, Postgres<br />
+            Storage - Cloudinary.com (image cloud), Fly.io volume (downloads storage)<br />
+        </p>
+        <p>
+            Deployment - Fly.io:<br />
+            &nbsp;&nbsp;&nbsp;- shared-cpu-1x@256MB - app (1GB volume)<br />
+            &nbsp;&nbsp;&nbsp;- shared-cpu-1x@256MB - Postgres (1GB volume)<br />
+            * This is the free tier, so servers may go into sleep mode periodically, resulting in some latency.
+        </p>
+        <p>
+            * The mobile version is currently in development; please use a desktop browser for now.
+        </p>
+        <p>
+            Registration is required to be part of the community: <a href="https://game-hub.fly.dev/">Game-Hub.Fly.Dev</a>.
+        </p>
+        <p>
+            The full code can be found on <a href="https://github.com/Heathro/GameHub">GitHub</a>.
+        </p>
+    </div>
+
+</div>
